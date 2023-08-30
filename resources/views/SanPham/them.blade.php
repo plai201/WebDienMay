@@ -24,10 +24,7 @@
                                 <label for="exampleFormControlSelect1">Danh mục cha</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <option value="0">Chọn danh mục cha</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    {!!$htmlOption!!}
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>

@@ -13,7 +13,7 @@ class CreateDanhMucSanPhamTable extends Migration
      */
     public function up()
     {
-        Schema::create('danh_muc_san_phams', function (Blueprint $table) {
+        Schema::create('danh_muc_san_pham', function (Blueprint $table) {
             $table->bigIncrements('MaDanhMuc');
             $table->string('TenDanhMuc');
             $table->integer("DanhMucCha")->default(0);
@@ -29,6 +29,6 @@ class CreateDanhMucSanPhamTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('danh_muc_san_phams');
+        Schema::dropIfExists('danh_muc_san_pham');
     }
 }
