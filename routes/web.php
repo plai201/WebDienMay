@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::prefix('danh-muc-san-pham')->group(function () {
+    Route::get('/',[
+        'as' => 'danh-muc-san-pham.trangChu',
+        'uses' => 'App\Http\Controllers\DanhMucSanPhamController@trangChu'
+    ]);
+
+    Route::get('/them',[
+       'as' => 'danh-muc-san-pham.them',
+        'uses' => 'App\Http\Controllers\DanhMucSanPhamController@them'
+    ]);
+});
