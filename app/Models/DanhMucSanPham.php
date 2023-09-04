@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DanhMucSanPham extends Model
 {
     use HasFactory;
+    use SoftDeletes;
     protected $table = 'danh_muc_san_pham'; // Đổi tên bảng mới tại đây
 
     protected $primaryKey = 'MaDanhMuc'; // Khóa chính của bảng

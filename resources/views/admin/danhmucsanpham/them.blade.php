@@ -15,14 +15,15 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <form>
+                        <form action="{{route('danh-muc-san-pham.themDanhMuc')}}" method="post">
+                            @csrf
                             <div class="form-group ">
                                 <label for="exampleFormControlInput1">Tên danh mục</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nhập tên danh mục">
+                                <input type="text" name="TenDanhMuc" class="form-control" id="exampleFormControlInput1" placeholder="Nhập tên danh mục">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Danh mục cha</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                                <select class="form-control" name="DanhMucCha" id="exampleFormControlSelect1">
                                     <option value="0">Chọn danh mục cha</option>
                                     {!!$htmlOption!!}
                                 </select>

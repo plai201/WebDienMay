@@ -16,6 +16,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
+                        <a href="" class="btn btn-success float-right m-2">Khôi phục</a>
                         <a href="{{route('danh-muc-san-pham.them')}}" class="btn btn-success float-right m-2">Add</a>
                     </div>
                     <div class="col-md-12">
