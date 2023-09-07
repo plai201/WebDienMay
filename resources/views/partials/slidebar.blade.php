@@ -61,6 +61,34 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('san-pham.trangChu')}}" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Khuyến mãi
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{route('san-pham.trangChu')}}" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Đơn hàng
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('san-pham.trangChu')}}" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Tài khoản
+                            <span class="right badge badge-danger">New</span>
+                        </p>
+                    </a>
+                </li>
 
             </ul>
         </nav>

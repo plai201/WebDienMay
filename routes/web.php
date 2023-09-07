@@ -72,6 +72,40 @@ Route::prefix('admin')->group(function () {
             'as' => 'san-pham.trangChu',
             'uses' => 'App\Http\Controllers\SanPhamController@trangChu'
         ]);
+        Route::get('/them',[
+            'as' => 'san-pham.them',
+            'uses' => 'App\Http\Controllers\SanPhamController@them'
+        ]);
+        Route::post('/them-san-pham',[
+            'as' => 'san-pham.them-san-pham',
+            'uses' => 'App\Http\Controllers\SanPhamController@themSanPham'
+        ]);
+//        Route::get('/sua/{MaSanPham}',[
+//            'as' => 'san-pham.sua',
+//            'uses' => 'App\Http\Controllers\SanPhamController@sua'
+//        ]);
+//        Route::post('/cap-nhap/{MaSanPham}',[
+//            'as' => 'san-pham.capNhap',
+//            'uses' => 'App\Http\Controllers\SanPhamController@capNhap'
+//        ]);
+//
+//        Route::get('/xoa/{MaSanPham}',[
+//            'as' => 'san-pham.xoa',
+//            'uses' => 'App\Http\ControllersSanPhamController@xoa'
+//        ]);
+        Route::get('/danh-sach-da-xoa',[
+            'as' => 'san-pham.danh-sach-da-xoa',
+            'uses' => 'App\Http\Controllers\SanPhamController@danhSachDaXoa'
+        ]);
+        Route::get('/khoi-phuc/{MaSanPham}',[
+            'as' => 'nhan-hang.khoiPhuc',
+            'uses' => 'App\Http\Controllers\NhanHangController@khoiPhuc'
+        ]);
+//        Route::get('/xoa-vinh-vien/{MaNhanHang}',[
+//            'as' => 'nhan-hang.xoaVinhVien',
+//            'uses' => 'App\Http\Controllers\NhanHangController@xoaVinhVien'
+//        ]);
+
     });
 
     Route::prefix('nhan-hang')->group(function (){
